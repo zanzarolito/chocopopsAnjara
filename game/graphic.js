@@ -64,7 +64,7 @@ function Ground(color, size_x, size_y, nb_tile)
     }
 }
 
-function Light(name, color, position)
+function Lighht(name, color, position)
 {
     pointLight = new THREE.PointLight(color, 50, 350);
 
