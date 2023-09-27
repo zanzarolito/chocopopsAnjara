@@ -300,7 +300,7 @@ THREE.OrbitControls = function(object, domElement) {
         event.preventDefault();
     }, false);
     this.domElement.addEventListener('mousedown', onMouseDown, false);
-    this.domElement.addEventListener('mousewheel', onMouseWheel, false);
+    this.domElement.addEventListener('mousewheel', onMouseWheel, { passive: true });
     this.domElement.addEventListener('DOMMouseScroll', onMouseWheel, false); // firefox
     window.addEventListener('keydown', onKeyDown, false);
     window.addEventListener('keyup', onKeyUp, false);
