@@ -28,10 +28,6 @@ function init()
     var xSpawnPlayer1 = 0;
     var ySpawnPlayer1 = 0;
 
-    var xSpawnPlayer2 = 0;
-    var ySpawnPlayer2 = 0;
-    
-
     while (!PositionOk(xSpawnPlayer1, ySpawnPlayer1))
     {
         xSpawnPlayer1 += sizeOfTileX;
@@ -41,7 +37,8 @@ function init()
     player1 = new Player("player1", 0xffff00, new THREE.Vector2(xSpawnPlayer1, ySpawnPlayer1), 0);
     scene.add(player1.graphic);
 
-    player2 = new Player("player2", 0xaaaa00, new THREE.Vector2(-1, -1), 0);
+
+    player2 = new Player("player2", 0xbbbbbb, new THREE.Vector2(0, 50), 0);
     scene.add(player2.graphic);
 
     light1 = new Light("sun", 0xffffff, "0,0,340");
